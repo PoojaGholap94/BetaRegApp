@@ -1,1 +1,18 @@
+
+
 /* You can add global styles to this file, and also import other style files */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+   margin: 0px;
+   padding:0 5px;
+   flex-wrap: wrap;
+}
+
+@font-face{
+    font-family:SF;
+    src:url(assets/Fonts/SF-Compact-Display-Regular.otf) format('openType');
+    }
+
+   
