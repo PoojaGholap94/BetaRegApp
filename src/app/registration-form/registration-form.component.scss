@@ -1,63 +1,71 @@
-*{
-    font-family: SF;
-    margin: 0px;
-    padding: 0px;
+
+@import "../../styles.scss";
+
+$mar-start:20%;
+$mar-top:40px;
+$width:width;
+
+.hrline {
+  width: 60%;
+  margin-left: $mar-start;
+  margin-top: $mar-top;
+  padding: 10px;
 }
 
-
-div.center{
-    text-align: center;
-    padding: 3px;
-    margin-top: 30px;
-    width: 100%;
+div.center {
+  text-align: center;
+  padding: 3px;
+  margin-top: 30px;
+  width: 100%;
 }
 
-p{
-    font-size: small;
-    color: gray;
-    padding: 4px;
+p {
+  font-size: small;
+  color: gray;
+  padding: 4px;
 }
 
-label{
-    font-size: xx-small;
-    color: gray;
-     margin-left: 30%;
-     
-    
+label {
+  font-size: xx-small;
+  color: gray;
+  margin-left: 30%;
 }
 
-div.container{
-    width: 100%;
+div.container {
+  width: 100%;
 }
 
-pre{
-    width: 40%;
-    // height: 35px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    background-color: rgba(49, 47, 47, 0.884);
-    color: white;
-    margin-left: 30%;
-    text-align: left;
+pre {
+  width: 40%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  background-color: rgba(49, 47, 47, 0.884);
+  color: white;
+  margin-left: 30%;
+  text-align: left;
 }
 
-input[type=number]
+input[type="number"] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-left: 30%;
+  box-sizing: border-box;
+  color: black;
+  border: 1px solid black;
+}
+
+.button {
+  border: 1px solid #ef5350;
+  color: #ef5350;
+  padding: 10px 32px;
+  margin-left: 45%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.Errmsg
 {
-    width: 40%;
-    padding: 12px 20px;
-    margin:8px 0;
-    margin-left: 30%;
-    box-sizing: border-box;
-    color: black;
-    border: 1px solid black;
-
-}
-
-.button{
-    border: 1px solid red;
-    color: red;
-    padding: 10px 32px;
-    margin-left: 45%;
-    text-align: center;
-    font-size: 16px;
+  margin-left: 30%;
+  color: red;
 }

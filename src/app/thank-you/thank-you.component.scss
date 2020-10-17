@@ -1,31 +1,26 @@
-img{
-    max-width: 100%;
-   text-align: center;
-   padding-top: 40px;
+@import "../../styles.scss";
+
+img {
+  max-width: 100%;
+  text-align: center;
+  padding-top: 40px;
 }
 
-*
-{
-    font-family: SF;
+p {
+  text-align: center;
+  color: blue;
+  font-size: large;
+  display: inline;
+  position: relative;
+}
+h1 {
+  text-align: center;
+  color: #ef5350;
+  font-style: bold;
 }
 
-p{
-    text-align: center;
-    color: blue;
-    font-size: large;
-    display: inline;
-    position: relative;
-    // margin-left: 40%;
-}
-h1{
-    text-align: center;
-    color: red;
-    font-style: bold;
-}
-
-.Msg{
-    color:gray;
-    font-size: x-small;
-    text-align: center;
-    margin-left: 45%;
+.Msg {
+  color: gray;
+  font-size: x-small;
+  text-align: center;
 }
