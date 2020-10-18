@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { FormBuilder, FormGroup, FormControl, Validators} from '@angular/forms';
+import {
+  FormBuilder,
+  FormGroup,
+  FormControl,
+  Validators,
+} from '@angular/forms';
 
 @Component({
   selector: 'app-registration-form',
@@ -12,20 +17,21 @@ export class RegistrationFormComponent implements OnInit {
   name: any;
   email: any;
 
-  constructor(private route: ActivatedRoute , private fb:FormBuilder) {
-
+  constructor(private route: ActivatedRoute, private fb: FormBuilder) {
     // Phone Number Validation
     this.form = fb.group({
-      mobileNumber: ['', [Validators.required, Validators.pattern("^((\\+91-?)|0)?[0-9]{10}$")]]
-    })
+      mobileNumber: [
+        '',
+        [Validators.required, Validators.pattern('^((\\+91-?)|0)?[0-9]{10}$')],
+      ],
+    });
   }
 
-  get f()
-  {
+  get f() {
     return this.form.controls;
   }
 
-  submit(){
+  submit() {
     console.log(this.form.value);
   }
 
@@ -35,8 +41,5 @@ export class RegistrationFormComponent implements OnInit {
       this.name = this.route.snapshot.paramMap.get('name');
       this.email = this.route.snapshot.paramMap.get('email');
     });
-
-   
-    
   }
 }

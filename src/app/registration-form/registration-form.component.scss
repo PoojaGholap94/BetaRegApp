@@ -5,7 +5,21 @@ $mar-start:20%;
 $mar-top:40px;
 $width:width;
 
-.hrline {
+.hrline1{
+  width: 40%; 
+  margin-left: 30%; 
+  padding: 10px
+}
+
+.div2{
+  text-align: left;
+}
+
+alert alert-danger{
+  color: red;
+}
+
+.hrline2 {
   width: 60%;
   margin-left: $mar-start;
   margin-top: $mar-top;

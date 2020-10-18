@@ -9,8 +9,8 @@ const routes: Routes = [
   { path: '', redirectTo: 'signup', pathMatch: 'full' },
   { path: 'signup', component: SignUpModuleComponent },
   { path: 'register/:name/:email', component: RegistrationFormComponent },
-  { path: 'thankyou', component: ThankYouComponent }
-  ];
+  { path: 'thankyou', component: ThankYouComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

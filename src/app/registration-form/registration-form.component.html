@@ -5,10 +5,10 @@
       Please confirm or edit your contact information, so that we can
       <br />notify you when you are approved for our BETA.
     </p>
-    <div style="width: 40%; margin-left: 30%; padding: 10px">
+    <div class="hrline1">
       <hr />
     </div>
-    <div style="text-align: left">
+    <div class="div2">
       <form [formGroup]="form" (ngSubmit)="submit()">
         <div class="form-group">
           <label>NAME</label>
@@ -26,8 +26,7 @@
             *ngIf="f.mobileNumber.touched && f.mobileNumber.invalid"
             class="alert alert-danger"
           >
-            <div class="
-            Errmsg" *ngIf="f.mobileNumber.errors.required">
+            <div class="Errmsg" *ngIf="f.mobileNumber.errors.required">
               Mobile Number is required.
             </div>
             <div class="Errmsg" *ngIf="f.mobileNumber.errors.pattern">
@@ -36,22 +35,15 @@
           </div>
 
           <br /><br />
-          <div class="hrline">
+          <div class="hrline2">
             <hr />
           </div>
           <div>
             <br />
-            <a
-              class="button"
-              type="submit"
-              routerLink="/thankyou"
-              >SIGNUP</a
-            >
+            <a class="button" type="submit" routerLink="/thankyou">SIGNUP</a>
           </div>
         </div>
       </form>
     </div>
   </div>
 </div>
-
-<router-outlet></router-outlet>
